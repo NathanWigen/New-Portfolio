@@ -146,9 +146,10 @@ input:checked + .slider:before {
 }
 
 .main {
-  height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
+  margin-bottom: -100px;
 }
 
 .main-text{
@@ -169,6 +170,7 @@ input:checked + .slider:before {
 }
 
 .sub-section{
+  min-height: 50vh;
   background-color: rgb(241, 239, 239);
   display: flex;
   flex-wrap: wrap;
@@ -283,13 +285,18 @@ input:checked + .slider:before {
 footer {
   display: flex;
   justify-content: center;
-  padding: 100px 30px;
+  margin-top: 0px;
+  padding: 10px 30px;
   background-color:rgb(136, 136, 136);
 }
 
 /* mobile breakpoint */
 
 @media only screen and (min-width: 970px) {
+
+  .main{
+    margin-bottom: -100px;
+  }
 
   .main-text{
     width: 50%;
@@ -298,8 +305,10 @@ footer {
   .square{
     width: 48%;
     margin: 1%;
-    height: 600px;
+    height: 500px;
   }
+
+
 }
 
 /* desktop breakpoint */
@@ -308,4 +317,5 @@ footer {
   .hero-image{
     display: none;
   }
+
 }
